@@ -41,9 +41,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            // 여기에 내 컴퓨터 IP를 입력하세요! (예: 192.168.0.15)
-            // 포트 번호(:8080)도 잊지 마세요.
-            val myPcIpAddress = "http://192.168.0.98:8080/"
+            val myPcIpAddress = "https://rendertest-qy4n.onrender.com/"
 
             var resultText by remember { mutableStateOf("휴대폰에서 서버 찾는 중...") }
             var inputText by remember { mutableStateOf("") } //post용
